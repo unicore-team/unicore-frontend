@@ -1,0 +1,38 @@
+@use "styles/colors";
+@use "styles/mixins";
+
+.aboutSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 700px;
+  text-align: center;
+
+  @include mixins.mobile {
+    height: 620px;
+  }
+
+  h4 {
+    color: colors.$gray-300;
+  }
+
+  h2 {
+    color: colors.$white;
+  }
+}
+
+.container {
+  position: absolute;
+
+  padding: 20px;
+}
+
+.animation {
+  position: absolute;
+
+  height: 700px;
+  pointer-events: none;
+}

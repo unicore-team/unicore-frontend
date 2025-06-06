@@ -1,0 +1,99 @@
+@use 'styles/mixins';
+
+.heading1 {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.heading2 {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.title1 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.title2 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.body1 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.body2 {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.mobile-heading1 {
+  @include mixins.mobile {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+  }
+}
+
+.mobile-heading2 {
+  @include mixins.mobile {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+  }
+}
+
+.mobile-title1 {
+  @include mixins.mobile {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+}
+
+.mobile-title2 {
+  @include mixins.mobile {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+}
+
+.mobile-body1 {
+  @include mixins.mobile {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+}
+
+.mobile-body2 {
+  @include mixins.mobile {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+}
+
+.mobile-caption {
+  @include mixins.mobile {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+}

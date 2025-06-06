@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 10;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  max-width: 1200px;
+  padding: 28px 40px;
+}
+
+.nav {
+  display: flex;
+
+  gap: 40px;
+
+  a {
+    text-decoration: none;
+  }
+}
