@@ -22,3 +22,13 @@ $desktop: 1200px;
     @content;
   }
 }
+
+@mixin text-gradient($gradient) {
+  color: black; // Fallback color for browsers that do not support background-clip
+  background: $gradient;
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
