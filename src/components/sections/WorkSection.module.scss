@@ -51,3 +51,23 @@ $gradientShift: gradientShift;
   }
 
 }
+
+.workList {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+
+  // 데스크탑: 3열
+  grid-template-columns: repeat(3, 1fr);
+
+  // 태블릿: 2열
+  @include mixins.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // 모바일: 1열
+  @include mixins.mobile {
+    grid-template-columns: 1fr;
+  }
+}
