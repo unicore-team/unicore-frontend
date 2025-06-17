@@ -1,0 +1,53 @@
+@use "styles/colors";
+@use "styles/mixins";
+
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+$gradientShift: gradientShift;
+
+.workSection {
+  width: 100%;
+
+  background: colors.$white;
+
+  padding: 100px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 60px;
+
+  text-align: center;
+
+  h4 {
+    color: colors.$gray-100;
+  }
+
+  h2 {
+    color: colors.$black;
+  }
+
+
+  .gradient {
+    @include mixins.text-gradient(linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #91eae4));
+    animation: #{$gradientShift} 3s ease infinite;
+  }
+
+}
