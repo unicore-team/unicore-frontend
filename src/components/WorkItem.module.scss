@@ -1,0 +1,48 @@
+@use "styles/colors";
+@use "styles/mixins";
+
+.workItem {
+  background: colors.$white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(110%);
+  }
+}
+
+.thumbnailWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.33333 / 1; // 이미지 비율 고정 (원본 비율 참고)
+}
+
+.thumbnail {
+  pointer-events: none;
+  object-fit: cover;
+}
+
+.textWrapper {
+  padding: 30px;
+
+  @include mixins.mobile {
+    padding: 24px;
+  }
+
+  .title {
+    color: colors.$black;
+    margin-bottom: 10px;
+    word-break: keep-all;
+    text-wrap: balance;
+  }
+
+  .description {
+    color: colors.$gray-200;
+    word-break: keep-all;
+    text-wrap: balance;
+  }
+}
