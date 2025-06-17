@@ -1,0 +1,37 @@
+@use "styles/colors";
+@use "styles/mixins";
+
+.footer {
+  width: 100%;
+  background: colors.$black;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include mixins.mobile {
+    gap: 8px;
+  }
+}
+
+.contactText {
+  color: colors.$gray-100;
+}
+
+.email {
+  color: colors.$white;
+
+  @include mixins.mobile {
+    font-size: 24px;
+  }
+}
+
+.companyInfo {
+  color: colors.$gray-300;
+}
