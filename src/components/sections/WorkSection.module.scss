@@ -22,8 +22,22 @@ $gradientShift: gradientShift;
   width: 100%;
 
   background: colors.$white;
+}
 
+.inner {
+  justify-content: space-between;
+  margin: 0 auto;
+
+  max-width: 1200px;
   padding: 100px;
+
+  @include mixins.tablet {
+    padding: 100px 60px;
+  }
+
+  @include mixins.mobile {
+    padding: 60px 20px;
+  }
 }
 
 .titleWrapper {
@@ -57,6 +71,8 @@ $gradientShift: gradientShift;
   gap: 20px;
   width: 100%;
   padding: 20px;
+
+  justify-items: center;
 
   // 데스크탑: 3열
   grid-template-columns: repeat(3, 1fr);
