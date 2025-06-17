@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './WorkItem.module.scss';
+import styles from '@/components/WorkItem.module.scss';
 
 type WorkItemProps = {
   thumbnail: string;
