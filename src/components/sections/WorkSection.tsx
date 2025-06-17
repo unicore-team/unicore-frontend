@@ -4,7 +4,7 @@ import { workItemData } from '@/data/workItemData';
 
 const WorkSection = () => {
   return (
-    <section className={styles.workSection}>
+    <section id="work" className={styles.workSection}>
       <div className={styles.inner}>
         <div className={styles.titleWrapper}>
           <h4 className="title1 mobile-body1">OUR WORK</h4>

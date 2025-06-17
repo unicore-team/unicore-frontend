@@ -2,7 +2,7 @@ import styles from '@/components/Footer.module.scss';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer id="contact" className={styles.footer}>
       <div className={styles.container}>
         <p className={`${styles.contactText} title2 mobile-body2`}>
           비즈니스 문의는 아래 메일로 연락 부탁드립니다 :)

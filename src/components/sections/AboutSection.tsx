@@ -28,7 +28,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className={styles.aboutSection}>
+    <section id="about" className={styles.aboutSection}>
       <div className={styles.lottieWrapper}>
         <Lottie
           className={styles.animationLottie}
