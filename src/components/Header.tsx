@@ -1,25 +1,19 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "@/components/Header.module.scss";
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from '@/components/Header.module.scss';
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
         <Link href="/">
-          <Image
-            src="/assets/images/logo.svg"
-            alt="Unicore"
-            width={150}
-            height={17}
-            priority
-          />
+          <Image src="/assets/images/logo.svg" alt="Unicore" width={150} height={17} priority />
         </Link>
         <nav className={styles.nav}>
-          <a className="body1" href="#">
+          <a className="body1" href="#about">
             ABOUT
           </a>
-          <a className="body1" href="#about">
+          <a className="body1" href="#work">
             WORK
           </a>
           <a className="body1" href="#contact">

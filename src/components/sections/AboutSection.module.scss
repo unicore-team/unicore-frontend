@@ -42,6 +42,7 @@
   text-align: center;
 
   clip-path: inset(-100px 0 0px 0);
+  scroll-margin-top: 80px;
 
   @include mixins.mobile {
     height: 620px;
