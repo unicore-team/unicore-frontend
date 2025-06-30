@@ -61,6 +61,9 @@ $gradientShift: gradientShift;
 
 
   .gradient {
+
+    -webkit-text-stroke: 0.2px colors.$white;
+
     @include mixins.text-gradient(linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #91eae4));
     animation: #{$gradientShift} 3s ease infinite;
   }
